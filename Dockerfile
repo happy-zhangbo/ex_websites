@@ -1,6 +1,7 @@
 FROM node
 # Create app directory
-WORKDIR ./
+WORKDIR /home
+COPY . .
 RUN npm install
 EXPOSE 3000
 
