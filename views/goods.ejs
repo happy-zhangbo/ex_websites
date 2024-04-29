@@ -1,0 +1,317 @@
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Industrey Demo1 – Industry and Engineering HTML Template</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/fevicon.png">
+    <!-- CSS
+       ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <!-- Base Icons -->
+    <link rel="stylesheet" href="/css/pbminfotech-base-icons.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <!-- Magnific -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <!-- Shortcode CSS -->
+    <link rel="stylesheet" href="/css/shortcode.css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="/revolution/rs6.css">
+</head>
+<body>
+
+<!-- page wrapper -->
+<div class="page-wrapper">
+    <!-- Header Main Area -->
+    <header class="site-header header-style-1">
+        <div class="pbmit-header-overlay">
+            <div class="pre-header">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <div class="site-branding pbmit-logo-area">
+                            <div class="wrap">
+                                <h1 class="site-title">
+                                    <a href="index.html" rel="home">
+                                        <span class="site-title-text">Industrey Demo1 - Industry and Engineering WordPress Theme</span>
+                                        <img class="pbmit-main-logo" src="/images/homepage-1/logo-white-dark.png" alt="Industrey Demo1" title="Industrey Demo1">
+
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="pbmit-header-info ml-auto">
+                            <div class="pbmit-header-info-inner">
+                                <div class="pbmit-header-box pbmit-header-box-2">
+                                    <a href="#">
+										<span class="pbmit-header-box-icon">
+											<i class="pbmit-industrey-icon pbmit-industrey-icon-send"></i>
+										</span>
+                                        <span class="pbmit-header-box-title">公司邮箱</span>
+                                        <span class="pbmit-header-box-content">services@wanbodragon.com</span>
+                                    </a>
+                                </div>
+                                <div class="pbmit-header-box pbmit-header-box-3">
+                                    <a href="#">
+										<span class="pbmit-header-box-icon">
+											<i class="pbmit-industrey-icon pbmit-industrey-icon-telephone"></i>
+										</span>
+                                        <span class="pbmit-header-box-title">全国服务热线</span>
+                                        <span class="pbmit-header-box-content">+(86) 18301141265</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-header-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex align-items-center justify-content-between header-menu-area">
+                                <div class="site-branding">
+										<span class="site-title">
+											<a href="index.html">
+												<img class="pbmit-sticky-logo" src="/images/homepage-1/industrey-logo.svg" alt="Industrey Demo1" title="Industrey Demo1">
+											</a>
+										</span>
+                                </div>
+                                <div class="site-navigations">
+                                    <nav class="main-menu navbar-expand-xl navbar-light">
+                                        <div class="navbar-header">
+                                            <!-- Toggle Button -->
+                                            <button class="navbar-toggler" type="button">
+                                                <i class="pbmit-base-icon-menu-1"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pbmit-mobile-menu-bg"></div>
+                                        <div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+                                            <div class="pbmit-menu-wrap">
+                                                <ul class="navigation clearfix">
+                                                    <li><a href="/">首页</a></li>
+                                                    <li class="active"><a href="/goods">产品中心</a></li>
+                                                    <li><a href="contact-us.html">联系我们</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Main Area End Here -->
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Produects -->
+        <section class="section-md">
+            <div class="container-xxl">
+                <div class="pbmit-heading-subheading text-center">
+                    <h4 class="pbmit-subtitle-2">PRODUCTS</h4>
+                    <h2 class="pbmit-title">产品中心</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="tab-single-one">
+                            <div class="pbmit-tab-style-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <ul class="nav flex-column nav-tabs mb-4" role="tablist">
+                                            <% products.forEach(function(item, index){%>
+                                                <li class="nav-item mb-3" role="presentation">
+                                                    <a class="nav-link <%= index===0?'active':'' %> pbmit-bg-color-light" data-bs-toggle="tab" href="#one_<%=item.id %>" aria-selected="true" role="tab">
+                                                        <span><%=item.title %></span>
+                                                    </a>
+                                                </li>
+                                            <% }) %>
+                                        </ul>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="tab-content">
+                                            <% products.forEach(function(item, index){%>
+                                                <div class="tab-pane tab-two-category <%= index===0?'show active':'' %>" id="one_<%=item.id%>" role="tabpanel">
+                                                 <div class="tab-content" id="pills-tabContent">
+                                                        <% item.data.forEach(function(twoItem, twoIndex){%>
+                                                            <div class="tab-pane fade <%= twoIndex===0?'show active':'' %>" id="two_<%=twoItem.id %>" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                                <div class="row">
+                                                                    <% twoItem.pros.forEach(function(pro){%>
+                                                                    <div class="col-md-4">
+                                                                        <article class="pbmit-team-style-1">
+                                                                            <div class="pbminfotech-post-item">
+                                                                                <div class="pbminfotech-team-image-box">
+                                                                                    <div class="pbmit-featured-wrapper">
+                                                                                        <a href="/product?oneid=<%=item.id%>&twoid=<%=twoItem.id%>&proId=<%=pro.id%>">
+                                                                                            <img src="<%=pro.image %>" class="img-fluid" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="pbminfotech-box-content d-flex justify-content-between align-items-center">
+                                                                                    <div class="pbmit-member-content">
+                                                                                        <div class="pbminfotech-box-team-position-wrap">
+                                                                                            <div class="pbminfotech-box-team-position"><%=item.title %></div>
+                                                                                        </div>
+                                                                                        <h5 class="pt-2 pbmit-team-title">
+                                                                                            <a href="/product?oneid=<%=item.id%>&twoid=<%=twoItem.id%>&proId=<%=pro.id%>"><%=pro.title %></a>
+                                                                                        </h5>
+                                                                                        <div class="pt-2 text-truncate-2">
+                                                                                            <%=pro.desc %>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </article>
+                                                                    </div>
+                                                                    <% })%>
+                                                                </div>
+                                                            </div>
+                                                        <% })%>
+                                                    </div>
+
+                                                </div>
+                                            <% }) %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Page Content End -->
+
+    <!-- footer -->
+    <div class="pbmit-footer-overlay">
+        <div class="pbmit-footer-overlay-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="pbmit-footer-overlay-left col-xl-3 col-md-12"> </div>
+                    <div class="pbmit-footer-overlay-right col-xl-9 col-md-12">
+                        <div class="pbmit-footer-contact-info">
+                            <div class="pbmit-footer-contact-info-inner d-flex align-items-center">
+                                <i class="pbmit-industrey-icon pbmit-base-icon-time-call"></i>
+                                <div class="pbmit-footer-contact-info-wrap">
+                                    <span class="pbmit-label pbmit-label-2">全国服务热线</span>+(86) 18301159652
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pbmit-footer-contact-info">
+                            <div class="pbmit-footer-contact-info-inner d-flex align-items-center">
+                                <i class="pbmit-industrey-icon pbmit-base-icon-email"></i>
+                                <div class="pbmit-footer-contact-info-wrap">
+                                    <span class="pbmit-label pbmit-label-2">公司邮箱</span>
+                                    services@wanbodragon.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer site-footer" style="width: 100%">
+        <div class="pbmit-footer-widget-area">
+            <div class="container">
+                <div class="row g-5 justify-content-center">
+                    <div class="pbmit-footer-widget-col-2 col-md-6 col-lg-4">
+                        <div class="widget">
+                            <h2 class="widget-title">企业宗旨</h2>
+                            <div class="textwidget">
+                                <p>
+                                    我们秉持创新驱动、品质至上的理念，精心打造每一款产品。我们的主题凝聚了对工艺技术的执着追求与对建筑饰面品质的深度理解，即“创新工艺，筑造品质”。<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pbmit-footer-widget-col-3 col-md-12 col-lg-4">
+                        <div class="widget">
+                            <h2 class="widget-title">产品中心</h2>
+                            <ul class="pbmit-rpw-list">
+                                <li><a href="about-us.html">内墙涂料</a></li>
+                                <li><a href="about-us.html">外墙涂料</a></li>
+                                <li><a href="project-single-details.html">涂料辅料</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pbmit-footer-widget-col-4 col-md-6 col-lg-4">
+                        <div class="widget">
+                            <h2 class="widget-title">立即联络</h2>
+                            <div class="textwidget">
+                                <p>如果您有任何问题或需要帮助，随时欢迎您与我们的团队取得联系。</p>
+                                <h3 class="footer-phone">(+86) 18301159652</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pbmit-footer-bottom">
+            <div class="container">
+                <div class="pbmit-footer-text-inner">
+                    <div class="row d-flex align-items-center justify-content-center">
+
+                        <div class="pbmit-footer-copyright-box pbmit-footer-copyright-box-2 col-md-6 col-lg-3">
+                            <img class="img-fluid" src="/images/footer-logo.png" alt="">
+                            <div class="menu-quick-links-container">
+                                Copyright © 2022 by <a href="http://www.bootstrapMB.com">bootstrapMB</a>, All Rights Reserved.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+
+</div>
+<!-- page wrapper End -->
+
+<!-- JS
+   ============================================ -->
+<!-- jQuery JS -->
+<script src="/js/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- jquery Waypoints JS -->
+<script src="/js/jquery.waypoints.min.js"></script>
+<!-- jquery Appear JS -->
+<script src="/js/jquery.appear.js"></script>
+<!-- Numinate JS -->
+<script src="/js/numinate.min.js"></script>
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
+<!-- Magnific JS -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- Circle Progress JS -->
+<script src="/js/circle-progress.js"></script>
+<!-- Scripts JS -->
+<script src="/js/scripts.js"></script>
+<!-- Revolution JS -->
+<script src="/revolution/rslider.js"></script>
+<script src="/revolution/rbtools.min.js"></script>
+<script src="/revolution/rs6.min.js"></script>
+</body>
+</html>
