@@ -17,7 +17,7 @@ INDEX:
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
 
  :root {
-     --pbmit-global-color: #44c45a;
+     --pbmit-global-color: rgba(194, 0, 23, 0.7);
      --pbmit-secondary-color: #111010;
      --pbmit-light-color: #f4f4f9;
      --pbmit-white-color:#ffffff;
