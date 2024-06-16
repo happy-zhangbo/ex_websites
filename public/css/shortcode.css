@@ -2766,7 +2766,6 @@ a.btn-arrow span:after {
     right: -80px;
     height: 100%;
     width: 2000px;
-    background-color: var(--pbmit-global-color);
     z-index: 0;
     border-radius: 0 50px 0 0;
 }

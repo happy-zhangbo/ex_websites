@@ -164,13 +164,13 @@
                                                             <div class="tab-pane fade <%= twoIndex===0?'show active':'' %>" id="two_<%=twoItem.id %>" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                                                 <div class="row">
                                                                     <% twoItem.pros.forEach(function(pro){%>
-                                                                        <div class="col-md-4">
+                                                                        <div class="col-md-6">
                                                                             <article class="pbmit-team-style-1">
                                                                                 <div class="pbminfotech-post-item">
                                                                                     <div class="pbminfotech-team-image-box">
                                                                                         <div class="pbmit-featured-wrapper">
                                                                                             <a href="/product?oneid=<%=item.id%>&twoid=<%=twoItem.id%>&proId=<%=pro.id%>">
-                                                                                                <img src="<%=pro.image %>" class="img-fluid" alt="">
+                                                                                                <img src="<%=pro.image %>" style="width:240px; height:240px" alt="">
                                                                                             </a>
                                                                                         </div>
                                                                                     </div>
@@ -207,64 +207,64 @@
                 </div>
             </div>
         </section>
-        <section class="section-md">
-            <div class="container">
-                <div class="pbmit-heading-subheading text-center">
-                    <h4 class="pbmit-subtitle-2">CASE</h4>
-                    <h2 class="pbmit-title">合作案例</h2>
-                </div>
-                <div class="swiper-slider" data-autoplay="false" data-loop="false" data-dots="true" data-arrows="false" data-columns="2" data-margin="30" data-effect="slide">
-                    <div class="swiper-wrapper">
-                        <% cases.forEach(item => { %>
-                            <div class="swiper-slide">
-                                <!-- Slide1 -->
-                                <article class="pbmit-portfolio-style-1">
-                                    <div class="pbminfotech-post-content">
-                                        <div class="pbmit-portfolio-img-wrapper">
-                                            <div class="pbmit-featured-wrapper">
-                                                <img src="<%=item.cover%>" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="pbminfotech-icon-box pbminfotech-media-link">
-                                                <a class="pbmit-lightbox" title="Building Construction Project" href="/images/homepage-1/portfolio/project-new-01.jpg">
-                                                    <i class="pbmit-base-icon-plus"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="pbminfotech-box-content">
-                                            <div class="pbminfotech-titlebox">
-                                                <h6 class="pbmit-port-cat">
-                                                    <a href="project-style-1.html" rel="tag"><%=item.tag %></a>
-                                                </h6>
-                                                <h3 class="pbmit-portfolio-title">
-                                                    <a href="project-single-details.html"><%=item.name %></a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        <% })%>
-                    </div>
-                    <div class="pbmit-ihbox pbmit-ihbox-style-3">
-                        <div class="pbmit-ihbox-box">
-                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-<!--                                <div class="pbmit-ihbox-icon">-->
-<!--                                    <div class="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">-->
-<!--                                        <img src="images/homepage-3/testimonial-01.jpg" class="img-fluid" alt="">-->
+<!--        <section class="section-md">-->
+<!--            <div class="container">-->
+<!--                <div class="pbmit-heading-subheading text-center">-->
+<!--                    <h4 class="pbmit-subtitle-2">CASE</h4>-->
+<!--                    <h2 class="pbmit-title">合作案例</h2>-->
+<!--                </div>-->
+<!--                <div class="swiper-slider" data-autoplay="false" data-loop="false" data-dots="true" data-arrows="false" data-columns="2" data-margin="30" data-effect="slide">-->
+<!--                    <div class="swiper-wrapper">-->
+<!--                        <% cases.forEach(item => { %>-->
+<!--                            <div class="swiper-slide">-->
+<!--                                &lt;!&ndash; Slide1 &ndash;&gt;-->
+<!--                                <article class="pbmit-portfolio-style-1">-->
+<!--                                    <div class="pbminfotech-post-content">-->
+<!--                                        <div class="pbmit-portfolio-img-wrapper">-->
+<!--                                            <div class="pbmit-featured-wrapper">-->
+<!--                                                <img src="<%=item.cover%>" class="img-fluid" alt="">-->
+<!--                                            </div>-->
+<!--                                            <div class="pbminfotech-icon-box pbminfotech-media-link">-->
+<!--                                                <a class="pbmit-lightbox" title="Building Construction Project" href="/images/homepage-1/portfolio/project-new-01.jpg">-->
+<!--                                                    <i class="pbmit-base-icon-plus"></i>-->
+<!--                                                </a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="pbminfotech-box-content">-->
+<!--                                            <div class="pbminfotech-titlebox">-->
+<!--                                                <h6 class="pbmit-port-cat">-->
+<!--                                                    <a href="project-style-1.html" rel="tag"><%=item.tag %></a>-->
+<!--                                                </h6>-->
+<!--                                                <h3 class="pbmit-portfolio-title">-->
+<!--                                                    <a href="project-single-details.html"><%=item.name %></a>-->
+<!--                                                </h3>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
 <!--                                    </div>-->
+<!--                                </article>-->
+<!--                            </div>-->
+<!--                        <% })%>-->
+<!--                    </div>-->
+<!--                    <div class="pbmit-ihbox pbmit-ihbox-style-3">-->
+<!--                        <div class="pbmit-ihbox-box">-->
+<!--                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">-->
+<!--&lt;!&ndash;                                <div class="pbmit-ihbox-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <img src="images/homepage-3/testimonial-01.jpg" class="img-fluid" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--                                <div class="pbmit-ihbox-contents">-->
+<!--                                    <h2 class="pbmit-element-title lh-base">-->
+<!--                                        产品优质，服务专业，客户需求响应迅速，<br />-->
+<!--                                        合作愉快，期待长期共赢。-->
+<!--                                    </h2>-->
 <!--                                </div>-->
-                                <div class="pbmit-ihbox-contents">
-                                    <h2 class="pbmit-element-title lh-base">
-                                        产品优质，服务专业，客户需求响应迅速，<br />
-                                        合作愉快，期待长期共赢。
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
 <!--        <section class="section-md">-->
 <!--            <div class="container">-->
 <!--                <div class="pbmit-heading-subheading text-center">-->
