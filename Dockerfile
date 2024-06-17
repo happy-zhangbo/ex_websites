@@ -1,7 +1,7 @@
 FROM anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/node:16.17.1-nslt-8.6
 # Create app directory\
-RUN mkdir -p /opt/website
-RUN chmod -R 777 /opt/website
+RUN sudo mkdir -p /opt/website
+RUN sudo chmod -R 777 /opt/website
 WORKDIR /opt/website
 COPY . .
 RUN npm install
