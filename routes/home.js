@@ -14,12 +14,18 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/product', function (req, res, next) {
-    return res.render('product', {});
+    const data  = req.query;
+    const oneType = products[data.oneid]
+    const twoType = oneType.data[data.twoid]
+    const pro = twoType.pros[data.proId]
+    console.log(oneType, twoType, pro)
+    return res.render('product', {oneType, twoType, pro});
 })
 
 router.get('/goods', function (req, res, next) {
     return res.render('goods', { title: 'Express', products: products });
 })
+
 
 
 

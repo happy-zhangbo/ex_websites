@@ -72,18 +72,27 @@
                                         <div class="tab-content">
                                             <% products.forEach(function(item, index){%>
                                                 <div class="tab-pane tab-two-category <%= index===0?'show active':'' %>" id="one_<%=item.id%>" role="tabpanel">
-                                                 <div class="tab-content" id="pills-tabContent">
+                                                    <ul class="nav nav-tab nav-fill mb-3 nav-tabs" id="pills-tab" role="tablist">
+                                                        <% item.data.forEach(function(twoItem, twoIndex){%>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link fs-6 <%= twoIndex===0?'active':'' %>" data-bs-toggle="pill" data-bs-target="#two_<%=twoItem.id %>" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                                                    <%=twoItem.title %>AA
+                                                                </button>
+                                                            </li>
+                                                        <% })%>
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
                                                         <% item.data.forEach(function(twoItem, twoIndex){%>
                                                             <div class="tab-pane fade <%= twoIndex===0?'show active':'' %>" id="two_<%=twoItem.id %>" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                                                 <div class="row">
-                                                                    <% twoItem.pros.forEach(function(pro){%>
-                                                                    <div class="col-md-4">
+                                                                    <% twoItem.pros.forEach(function(pro, proIndex){%>
+                                                                    <div class="col-md-6">
                                                                         <article class="pbmit-team-style-1">
                                                                             <div class="pbminfotech-post-item">
                                                                                 <div class="pbminfotech-team-image-box">
                                                                                     <div class="pbmit-featured-wrapper">
-                                                                                        <a href="/product?oneid=<%=item.id%>&twoid=<%=twoItem.id%>&proId=<%=pro.id%>">
-                                                                                            <img src="<%=pro.image %>" class="img-fluid" alt="">
+                                                                                        <a href="/product?oneid=<%=index%>&twoid=<%=twoIndex%>&proId=<%=proIndex%>">
+                                                                                            <img src="<%=pro.image %>" style="width:240px; height:240px" alt="">
                                                                                         </a>
                                                                                     </div>
                                                                                 </div>
@@ -93,7 +102,7 @@
                                                                                             <div class="pbminfotech-box-team-position"><%=item.title %></div>
                                                                                         </div>
                                                                                         <h5 class="pt-2 pbmit-team-title">
-                                                                                            <a href="/product?oneid=<%=item.id%>&twoid=<%=twoItem.id%>&proId=<%=pro.id%>"><%=pro.title %></a>
+                                                                                            <a href="/product?oneid=<%=index%>&twoid=<%=twoIndex%>&proId=<%=proIndex%>"><%=pro.title %></a>
                                                                                         </h5>
                                                                                         <div class="pt-2 text-truncate-2">
                                                                                             <%=pro.desc %>
