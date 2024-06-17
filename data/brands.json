@@ -2,37 +2,6 @@
   {
     "id": 0,
     "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-06.png",
-    "image": "images/homepage-1/client/client-06.png"
-  },
-  {
-    "id": 0,
-    "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-05.png",
-    "image": "images/homepage-1/client/client-05.png"
-  },
-  {
-    "id": 0,
-    "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-04.png",
-    "image": "images/homepage-1/client/client-04.png"
-  },
-  {
-    "id": 0,
-    "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-03.png",
-    "image": "images/homepage-1/client/client-03.png"
-  },
-  {
-    "id": 0,
-    "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-02.png",
-    "image": "images/homepage-1/client/client-02.png"
-  },
-  {
-    "id": 0,
-    "brandName": "",
-    "imageHover": "images/homepage-1/client/client-white-01.png",
-    "image": "images/homepage-1/client/client-01.png"
+    "image": "images/LOGO/logo.png"
   }
 ]
