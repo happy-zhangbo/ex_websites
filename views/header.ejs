@@ -6,8 +6,8 @@
                     <div class="wrap">
                         <h1 class="site-title">
                             <a href="index.html" rel="home">
-                                <span class="site-title-text">Industrey Demo1 - Industry and Engineering WordPress Theme</span>
-                                <img class="pbmit-main-logo" src="/images/LOGO/image.png" alt="Industrey Demo1" title="Industrey Demo1">
+                                <span class="site-title-text">万博龙腾绿居仁官网</span>
+                                <img class="pbmit-main-logo" src="/images/LOGO/logo.png" alt="Industrey Demo1" title="Industrey Demo1">
                             </a>
                         </h1>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="site-branding">
 										<span class="site-title">
 											<a href="index.html">
-												<img class="pbmit-sticky-logo" src="/images/LOGO/image.png" alt="Industrey Demo1" title="Industrey Demo1">
+												<img class="pbmit-sticky-logo" src="/images/LOGO/logo.png" alt="Industrey Demo1" title="Industrey Demo1">
 											</a>
 										</span>
                         </div>
@@ -62,8 +62,25 @@
                                     <div class="pbmit-menu-wrap">
                                         <ul class="navigation clearfix">
                                             <li class="<%=active==='home'?'active':'' %>"><a href="/">首页</a></li>
-                                            <li class="<%=active=='goods'?'active':'' %>"><a href="/goods">产品中心</a></li>
-                                            <li class="<%=active=='index'?'active':'' %>"><a href="contact-us.html">联系我们</a></li>
+                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
+                                                <a href="services.html">内墙涂料</a>
+                                                <ul>
+                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
+                                                <a href="services.html">外墙涂料</a>
+                                                <ul>
+                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
+                                                <a href="services.html">基辅材</a>
+                                                <ul>
+                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="<%=active=='index'?'active':'' %>"><a href="contact-us.html">关于我们</a></li>
                                         </ul>
                                     </div>
                                 </div>
