@@ -4,7 +4,7 @@ var router = express.Router();
 var products = require("../data/products.json");
 var brands = require("../data/brands.json");
 var cases = require("../data/cases.json");
-const {route} = require("express/lib/router");
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

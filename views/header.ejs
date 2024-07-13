@@ -62,24 +62,17 @@
                                     <div class="pbmit-menu-wrap">
                                         <ul class="navigation clearfix">
                                             <li class="<%=active==='home'?'active':'' %>"><a href="/">首页</a></li>
-                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
-                                                <a href="services.html">内墙涂料</a>
+                                            <% products.forEach(function(item, index){ %>
+                                            <li class="dropdown">
+                                                <a href="services.html"><%=item.title %></a>
                                                 <ul>
-                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
+                                                    <% item.data[0].pros.forEach(function (proItem, proIndex) {%>
+                                                        <li><a href="/product?oneid=<%=index%>&twoid=0&proId=<%=proIndex%>"><%=proItem.label%></a></li>
+                                                    <%})%>
+                                                    
                                                 </ul>
                                             </li>
-                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
-                                                <a href="services.html">外墙涂料</a>
-                                                <ul>
-                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown" class="<%=active=='goods'?'active':'' %>">
-                                                <a href="services.html">基辅材</a>
-                                                <ul>
-                                                    <li><a href="services-details.html">抗霉乳胶漆</a></li>
-                                                </ul>
-                                            </li>
+                                            <% }) %>
                                             <li class="<%=active=='index'?'active':'' %>"><a href="contact-us.html">关于我们</a></li>
                                         </ul>
                                     </div>

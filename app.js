@@ -18,6 +18,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var products = require("./data/products.json");
+
+app.use((req, res, next) => {
+  app.locals["products"] = products;
+  next()
+});
 app.use('/', homeRouter);
 app.use('/home', homeRouter)
 
