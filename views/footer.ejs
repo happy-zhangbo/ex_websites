@@ -1,7 +1,7 @@
 <footer class="footer site-footer" style="width: 100%">
     <div class="pbmit-footer-widget-area">
-        <div class="container">
-            <div class="row g-5 justify-content-center">
+        <div class="" style="width: 100vw;">
+            <div class="row g-5 justify-content-center" style="width: 100%">
                 <!--                    <div class="pbmit-footer-widget-col-1 col-md-6 col-lg-3">-->
                 <!--                        <aside class="widget widget-last">-->
                 <!--                            <div class="textwidget">-->
@@ -35,9 +35,12 @@
                     <div class="widget">
                         <h2 class="widget-title">产品中心</h2>
                         <ul class="pbmit-rpw-list">
-                            <li><a href="about-us.html">内墙涂料</a></li>
-                            <li><a href="about-us.html">外墙涂料</a></li>
-                            <li><a href="project-single-details.html">涂料辅料</a></li>
+                            <% products.forEach(function(item, index){ %>
+                                <li><a href="about-us.html"><%=item.title %></a></li>
+                            <% })%>
+<!--                            <li><a href="about-us.html">内墙涂料</a></li>-->
+<!--                            <li><a href="about-us.html">外墙涂料</a></li>-->
+<!--                            <li><a href="project-single-details.html">涂料辅料</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -46,7 +49,7 @@
                         <h2 class="widget-title">立即联络</h2>
                         <div class="textwidget">
                             <p>如果您有任何问题或需要帮助，随时欢迎您与我们的团队取得联系。</p>
-                            <h3 class="footer-phone">40018301159652</h3>
+                            <h3 class="footer-phone">18301159652</h3>
                         </div>
                     </div>
                 </div>
@@ -57,9 +60,9 @@
         <div class="container">
             <div class="pbmit-footer-text-inner">
                 <div class="row d-flex align-items-center justify-content-center w-100">
-                    <div class="pbmit-footer-copyright-box pbmit-footer-copyright-box-2 col-md-6 col-lg-3">
-                        <image class="mb-2" src="images/qrcode/qrcode_for_gh_0dd6603d45e2_344.jpg" style="width: 60%"></image>
-                        <image src="/images/LOGO/image_black.png" alt="" style="width: 100%"></image>
+                    <div class="pbmit-footer-copyright-box pbmit-footer-copyright-box-2">
+                        <image class="mb-2" src="images/qrcode/qrcode_for_gh_0dd6603d45e2_344.jpg" style="width: 200px"></image>
+                        <image src="/images/LOGO/image_black.png" alt="" style="width: 200px"></image>
                         <div class="menu-quick-links-container">
                             Copyright © 2022 by Wanbodragon, All Rights Reserved.
                         </div>
